@@ -14,3 +14,7 @@ A tool that visualizes the memory trace extraced by `pin`.
 ### sim
 A tool that simulates multiple page replacement algorithms using
 a memory trace extraced by `pin`.
+
+### script
+script tool
+
