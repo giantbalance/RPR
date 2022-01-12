@@ -22,6 +22,7 @@ apprun.sh : run specific workload and save trace.
 ex : apprun.sh radix
 
 simrun.sh : run specific trace and calculate miss rate.
+
 if not mentioned, run all policies
 
 ex : simrun.sh radix alifo
