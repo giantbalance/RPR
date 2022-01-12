@@ -23,15 +23,19 @@ ex : apprun.sh radix
 
 simrun.sh : run specific trace and calculate miss rate.
 if not mentioned, run all policies
+
 ex : simrun.sh radix alifo
+
 ex : simrun.sh radix 
 
 allrun.sh : run both app and sim
+
 ex : allrun.sh radix
 
 totalscript.sh : run both apprun.sh and simrun.sh
 
 simrun_rl.sh : run specific trace and calculate miss rate 100 times
+
 ex: simrun_rl.sh radix alifo
 
 
