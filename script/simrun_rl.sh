@@ -13,7 +13,7 @@ then
 	POLICY="$2"
 	NAME="$2"
 else
-	POLICY=("opt" "clock" "clock-pro" "seq" "alifo" "nlifo")
+	POLICY=("opt" "clock" "clock-pro" "seq" "alifo" )
 	NAME="ALL"
 fi
 SIZE_cholesky=("4000" "6250" "8500" "10750" "13000" "15250" "17500" "19750" "22000" "24250" "26500" "28750" "31000" "33250" "35500" "37750" "40000" )
@@ -77,13 +77,7 @@ for pol_item in ${POLICY[*]}
 do
 	for size_item in ${SIZE[*]}
 	do
-
-		if [ $pol_item = "nlifo" ] 
-		then
-			RUN="$SIMDIR alifo $size_item $INPUT -r"
-		else
-			RUN="$SIMDIR $pol_item $size_item $INPUT"
-		fi
+		RUN="$SIMDIR $pol_item $size_item $INPUT"
 		for ((i=0;i<=99;i++))
 		do
 			echo "$RUN" | tee -a $LOG

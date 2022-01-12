@@ -4,9 +4,9 @@
 
 #Argument : [TARGET]
 
-TARGET="fft"
-POLICY="nlifo"
-SIMDIR="/home/dcslab/APR/pose-tools-master/train_radix/sim"
+TARGET="$1"
+POLICY="$2"
+SIMDIR="/home/dcslab/git_rpr/rpr/sim/sim"
 INPUTDIR="/home/dcslab/APR/pose-tools-master/script"
 SIZE_cholesky=("4000" "6250" "8500" "10750" "13000" "15250" "17500" "19750" "22000" "24250" "26500" "28750" "31000" "33250" "35500" "37750" "40000" )
 
@@ -69,13 +69,7 @@ for pol_item in ${POLICY[*]}
 do
 	for size_item in ${SIZE[*]}
 	do
-
-	if [ $pol_item = "nlifo" ] 
-	then
-		RUN="$SIMDIR alifo $size_item $INPUT -run"
-	else
 		RUN="$SIMDIR $pol_item $size_item $INPUT"
-	fi
 		echo "$RUN" | tee -a $LOG
 		eval $RUN | tee -a $LOG
 	done
