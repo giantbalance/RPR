@@ -16,5 +16,11 @@ A tool that simulates multiple page replacement algorithms using
 a memory trace extraced by `pin`.
 
 ### script
-script tool
+script 
+apprun.sh : run specific workload and save trace
+simrun.sh : run specific trace and calculate miss rate
+allrun.sh : run all workload and save trace
+totalscript.sh : run both apprun.sh and simrun.sh
+simrun_rl.sh : run specific trace and calculate miss rate 100 times
+
 
