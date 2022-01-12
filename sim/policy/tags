@@ -1,0 +1,718 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC		:= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS		:= -std=c99 -Wall$/;"	m
+CLOCK	alifo.h	/^	CLOCK,$/;"	e	enum:chal_policy
+DECAY_FACTOR_DEFAULT	alifo.h	10;"	d
+DOWN	seq.h	/^	DOWN,$/;"	e	enum:dir
+DRAW	alifo.h	/^	DRAW = 0,$/;"	e	enum:chal_policy
+HDRS	Makefile	/^HDRS		:= $(wildcard *.h ..\/sim.h ..\/lib\/*.h)$/;"	m
+L	seq.h	10;"	d
+LIFO	alifo.h	/^	LIFO,$/;"	e	enum:chal_policy
+M	seq.h	11;"	d
+MAX_NR_SEQ	seq.h	8;"	d
+MAX_POW_BIT	alifo.c	24;"	d	file:
+MEM_AREA_THRESHOLD	alifo.h	9;"	d
+MEM_AREA_THRESHOLD	clock-pro.h	8;"	d
+MEM_AREA_THRESHOLD	mallocstat.h	8;"	d
+MEM_AREA_THRESHOLD	opt.h	10;"	d
+MEM_AREA_THRESHOLD	watch-pro.h	10;"	d
+N	seq.h	9;"	d
+NIL	seq.h	/^	NIL = 0,$/;"	e	enum:dir
+NR_DIRS	seq.h	/^	NR_DIRS,$/;"	e	enum:dir
+OBJS	Makefile	/^OBJS		:= $(SRCS:.c=.o)$/;"	m
+SRCS	Makefile	/^SRCS		:= $(wildcard *.c)$/;"	m
+TEST_HAND_SANITY	clock-pro.c	396;"	d	file:
+UP	seq.h	/^	UP,$/;"	e	enum:dir
+_ALIFO_H	alifo.h	3;"	d
+_CLOCK_H	clock.h	3;"	d
+_CLOCK_PRO_H	clock-pro.h	3;"	d
+_COMMON_H	common.h	3;"	d
+_FIFO_H	fifo.h	3;"	d
+_LRU_H	lru.h	3;"	d
+_MALLOCSTAT_H	mallocstat.h	3;"	d
+_OPT_H	opt.h	3;"	d
+_SEQ_H	seq.h	3;"	d
+_WATCH_PRO_H	watch-pro.h	3;"	d
+__add_cold_page	clock-pro.c	/^__add_cold_page(clock_pro_t *clock, struct page *page)$/;"	f	file:
+__add_cold_page	watch-pro.c	/^__add_cold_page(gclock_t *gclock, watch_t *watch, struct page *page)$/;"	f	file:
+__add_cold_page_global	watch-pro.c	/^__add_cold_page_global(gclock_t *gclock, struct page *page)$/;"	f	file:
+__add_cold_page_local	watch-pro.c	/^__add_cold_page_local(watch_t *watch, struct page *page)$/;"	f	file:
+__add_ghost_page	watch-pro.c	/^__add_ghost_page(gclock_t *gclock, watch_t *watch, struct page *page)$/;"	f	file:
+__add_ghost_page_global	watch-pro.c	/^__add_ghost_page_global(gclock_t *gclock, struct page *page)$/;"	f	file:
+__add_ghost_page_local	watch-pro.c	/^__add_ghost_page_local(watch_t *watch, struct page *page)$/;"	f	file:
+__add_hot_page	clock-pro.c	/^__add_hot_page(clock_pro_t *clock, struct page *page)$/;"	f	file:
+__add_hot_page_global	watch-pro.c	/^__add_hot_page_global(gclock_t *gclock, struct page *page)$/;"	f	file:
+__add_hot_page_local	watch-pro.c	/^__add_hot_page_local(watch_t *watch, struct page *page)$/;"	f	file:
+__init_policy_list	common.h	/^static void __init_policy_list(policy_t *policy, int *nr_policy)$/;"	f
+__page_mkold_global	alifo.c	103;"	d	file:
+__page_mkold_local	alifo.c	102;"	d	file:
+__page_mkyoung_global	alifo.c	101;"	d	file:
+__page_mkyoung_local	alifo.c	100;"	d	file:
+__page_pevict	alifo.c	105;"	d	file:
+__page_vevict	alifo.c	104;"	d	file:
+__page_young_global	alifo.c	99;"	d	file:
+__page_young_local	alifo.c	98;"	d	file:
+__promote_page	clock-pro.c	/^__promote_page(clock_pro_t *clock, struct page *page)$/;"	f	file:
+__promote_page_global	watch-pro.c	/^__promote_page_global(gclock_t *gclock, struct page *page)$/;"	f	file:
+__promote_page_local	watch-pro.c	/^__promote_page_local(watch_t *watch, struct page *page)$/;"	f	file:
+__snapshot_all_seq	seq.c	/^__snapshot_all_seq(global_seq_t *gseq)$/;"	f	file:
+__snapshot_global_list	alifo.c	/^__snapshot_global_list(struct list_head *page_list)$/;"	f	file:
+__snapshot_local_list	alifo.c	/^__snapshot_local_list(pol_t *pol)$/;"	f	file:
+__snapshot_seq	seq.c	/^__snapshot_seq(seq_t *seq)$/;"	f	file:
+__test_and_clear_page_young_global	alifo.c	/^__test_and_clear_page_young_global(struct page *page)$/;"	f	file:
+__test_and_clear_page_young_local	alifo.c	/^__test_and_clear_page_young_local(struct page *page)$/;"	f	file:
+access_CLOCK	clock.c	/^int access_CLOCK(policy_t *self, unsigned long vpn)$/;"	f
+access_CLOCK_Pro	clock-pro.c	/^int access_CLOCK_Pro(policy_t *self, unsigned long vpn)$/;"	f
+access_FIFO	fifo.c	/^int access_FIFO(policy_t *self, unsigned long vpn)$/;"	f
+access_LRU	lru.c	/^int access_LRU(policy_t *self, unsigned long vpn)$/;"	f
+access_OPT	opt.c	/^int access_OPT(policy_t *self, unsigned long vpn)$/;"	f
+access_SEQ	seq.c	/^int access_SEQ(policy_t *self, unsigned long vpn)$/;"	f
+access_WATCH_Pro	watch-pro.c	/^int access_WATCH_Pro(policy_t *self, unsigned long vpn)$/;"	f
+access_aLIFO	alifo.c	/^int access_aLIFO(policy_t *self, unsigned long vpn)$/;"	f
+access_mallocstat	mallocstat.c	/^int access_mallocstat(policy_t *self, unsigned long vpn)$/;"	f
+add_cold_page	clock-pro.c	/^void add_cold_page(clock_pro_t *clock, struct page *page)$/;"	f
+add_cold_page	watch-pro.c	/^add_cold_page(gclock_t *gclock, struct page *page)$/;"	f	file:
+add_ghost_page	watch-pro.c	/^add_ghost_page(gclock_t *gclock, watch_t *watch, struct page *page)$/;"	f	file:
+add_hot_page	clock-pro.c	/^void add_hot_page(clock_pro_t *clock, struct page *page)$/;"	f
+add_new_seq	seq.c	/^add_new_seq(global_seq_t *gseq, unsigned long vpn)$/;"	f	file:
+add_page_CLOCK	clock.c	/^void add_page_CLOCK(struct list_head *page_list, struct page *page)$/;"	f
+add_page_CLOCK_Pro	clock-pro.c	/^void add_page_CLOCK_Pro(policy_t *self, unsigned long addr, struct page *page)$/;"	f
+add_page_FIFO	fifo.c	/^static inline void add_page_FIFO(struct list_head *page_list, struct page *page)$/;"	f	file:
+add_page_LRU	lru.c	/^static inline void add_page_LRU(struct list_head *page_list, struct page *page)$/;"	f	file:
+add_page_SEQ	seq.c	/^void add_page_SEQ(struct list_head *page_list, global_seq_t *gseq,$/;"	f
+add_page_aLIFO	alifo.c	/^void add_page_aLIFO(struct list_head *global_list, pol_t *pol,$/;"	f
+add_seq	seq.c	/^add_seq(global_seq_t *gseq, seq_t *new)$/;"	f	file:
+adj_cold_ratio_global	watch-pro.c	/^adj_cold_ratio_global(gclock_t *gclock, double delta)$/;"	f	file:
+adj_cold_ratio_local	watch-pro.c	/^adj_cold_ratio_local(watch_t *watch, double delta)$/;"	f	file:
+adjust_hand_hot_global	watch-pro.c	/^adjust_hand_hot_global(gclock_t *gclock)$/;"	f	file:
+adjust_hand_hot_local	watch-pro.c	/^adjust_hand_hot_local(gclock_t *gclock, watch_t *watch)$/;"	f	file:
+adjust_hand_test_global	watch-pro.c	/^adjust_hand_test_global(gclock_t *gclock)$/;"	f	file:
+alloc_page_md	alifo.c	/^alloc_page_md(struct page *page)$/;"	f	file:
+alloc_page_md	clock-pro.c	/^static inline void alloc_page_md(struct page *page)$/;"	f	file:
+alloc_page_md	opt.c	/^static inline void alloc_page_md(struct page *page)$/;"	f	file:
+alloc_page_md	watch-pro.c	/^alloc_page_md(struct page *page)$/;"	f	file:
+cand_node	opt.h	/^	struct avl_tree_node cand_node;$/;"	m	struct:ref_node_t	typeref:struct:ref_node_t::avl_tree_node
+chal_policy	alifo.h	/^enum chal_policy {$/;"	g
+challenging	alifo.c	/^	bool challenging;$/;"	m	struct:__anon2	file:
+check_ghost_buffer	alifo.c	/^check_ghost_buffer(data_aLIFO_t *data)$/;"	f	file:
+choose_victim_in_seq	seq.c	/^choose_victim_in_seq(data_SEQ_t *data, seq_t *seq)$/;"	f	file:
+clear_page_challenging	alifo.c	/^clear_page_challenging(struct page *page)$/;"	f	file:
+clear_page_evicted	alifo.c	/^clear_page_evicted(struct page *page)$/;"	f	file:
+clear_page_present	alifo.c	/^clear_page_present(struct page *page)$/;"	f	file:
+clock	clock-pro.h	/^	clock_pro_t *clock;$/;"	m	struct:__anon33
+clock_pro_stat_t	clock-pro.h	/^} clock_pro_stat_t;$/;"	t	typeref:struct:__anon29
+clock_pro_t	clock-pro.h	/^} clock_pro_t;$/;"	t	typeref:struct:__anon28
+clock_weight	alifo.h	/^	long double clock_weight;$/;"	m	struct:__anon7
+clock_win	alifo.h	/^	unsigned long clock_win;$/;"	m	struct:__anon6
+cmp_cand	opt.c	/^cmp_cand(const struct avl_tree_node *a, const struct avl_tree_node *b)$/;"	f	file:
+cmp_locked	opt.c	/^cmp_locked(const struct avl_tree_node *a, const struct avl_tree_node *b)$/;"	f	file:
+cold_list	clock-pro.h	/^	struct list_head cold_list;$/;"	m	struct:__anon28	typeref:struct:__anon28::list_head
+cold_list	watch-pro.h	/^	struct list_head cold_list;$/;"	m	struct:__anon12	typeref:struct:__anon12::list_head
+cold_list	watch-pro.h	/^	struct list_head cold_list;$/;"	m	struct:__anon13	typeref:struct:__anon13::list_head
+cold_ratio	watch-pro.h	/^	double cold_ratio;$/;"	m	struct:__anon12
+cold_ratio	watch-pro.h	/^	double cold_ratio;$/;"	m	struct:__anon13
+create_mem_area	alifo.c	/^create_mem_area(data_aLIFO_t *data, unsigned long addr, unsigned long size)$/;"	f	file:
+create_mem_area	clock-pro.c	/^create_mem_area(data_CLOCK_Pro_t *data, unsigned long addr, unsigned long size)$/;"	f	file:
+create_mem_area	mallocstat.c	/^create_mem_area(data_mallocstat_t *data, unsigned long addr, unsigned long size)$/;"	f	file:
+create_mem_area	opt.c	/^create_mem_area(data_OPT_t *data, unsigned long addr, unsigned long size)$/;"	f	file:
+create_mem_area	watch-pro.c	/^create_mem_area(data_WATCH_Pro_t *data, unsigned long addr, unsigned long size)$/;"	f	file:
+data_CLOCK	clock.c	/^data_CLOCK_t data_CLOCK;$/;"	v
+data_CLOCK_Pro	clock-pro.c	/^data_CLOCK_Pro_t data_CLOCK_Pro;$/;"	v
+data_CLOCK_Pro_t	clock-pro.h	/^} data_CLOCK_Pro_t;$/;"	t	typeref:struct:__anon33
+data_CLOCK_t	clock.h	/^} data_CLOCK_t;$/;"	t	typeref:struct:__anon27
+data_FIFO	fifo.c	/^data_FIFO_t data_FIFO;$/;"	v
+data_FIFO_t	fifo.h	/^} data_FIFO_t;$/;"	t	typeref:struct:__anon26
+data_LRU	lru.c	/^data_LRU_t data_LRU;$/;"	v
+data_LRU_t	lru.h	/^} data_LRU_t;$/;"	t	typeref:struct:__anon34
+data_OPT	opt.c	/^data_OPT_t data_OPT;$/;"	v
+data_OPT_t	opt.h	/^} data_OPT_t;$/;"	t	typeref:struct:__anon25
+data_SEQ	seq.c	/^data_SEQ_t data_SEQ;$/;"	v
+data_SEQ_t	seq.h	/^} data_SEQ_t;$/;"	t	typeref:struct:__anon21
+data_WATCH_Pro	watch-pro.c	/^data_WATCH_Pro_t data_WATCH_Pro;$/;"	v
+data_WATCH_Pro_t	watch-pro.h	/^} data_WATCH_Pro_t;$/;"	t	typeref:struct:__anon16
+data_aLIFO	alifo.c	/^data_aLIFO_t data_aLIFO;$/;"	v
+data_aLIFO_t	alifo.h	/^} data_aLIFO_t;$/;"	t	typeref:struct:__anon9
+data_mallocstat	mallocstat.c	/^data_mallocstat_t data_mallocstat;$/;"	v
+data_mallocstat_t	mallocstat.h	/^} data_mallocstat_t;$/;"	t	typeref:struct:__anon18
+dec_cold_ratio_global	watch-pro.c	/^dec_cold_ratio_global(gclock_t *gclock)$/;"	f	file:
+dec_cold_ratio_local	watch-pro.c	/^dec_cold_ratio_local(watch_t *watch)$/;"	f	file:
+dec_cold_size	clock-pro.c	/^dec_cold_size(clock_pro_t *clock)$/;"	f	file:
+decay	alifo.h	/^	long double decay;$/;"	m	struct:__anon7
+def_ma	alifo.h	/^	mem_area_t *def_ma;$/;"	m	struct:__anon9
+def_ma	clock-pro.h	/^	mem_area_t *def_ma;$/;"	m	struct:__anon33
+def_ma	mallocstat.h	/^	mem_area_t *def_ma;$/;"	m	struct:__anon18
+def_ma	opt.h	/^	mem_area_t *def_ma;$/;"	m	struct:__anon25
+def_ma	watch-pro.h	/^	mem_area_t *def_ma;$/;"	m	struct:__anon16
+delete_max_cand	opt.c	/^delete_max_cand(struct avl_tree_node **avl)$/;"	f	file:
+delete_min_cand	opt.c	/^delete_min_cand(struct avl_tree_node **avl)$/;"	f	file:
+demote_hot_page_global	watch-pro.c	/^demote_hot_page_global(gclock_t *gclock)$/;"	f	file:
+demote_hot_page_local	watch-pro.c	/^demote_hot_page_local(watch_t *watch)$/;"	f	file:
+demote_hot_pages_global	watch-pro.c	/^demote_hot_pages_global(gclock_t *gclock)$/;"	f	file:
+demote_hot_pages_local	watch-pro.c	/^demote_hot_pages_local(gclock_t *gclock, watch_t *watch)$/;"	f	file:
+demote_page	clock-pro.c	/^demote_page(clock_pro_t *clock, struct page *page)$/;"	f	file:
+dir	seq.h	/^	enum dir dir;$/;"	m	struct:__anon20	typeref:enum:__anon20::dir
+dir	seq.h	/^enum dir {$/;"	g
+discount_rate	alifo.c	/^double discount_rate;$/;"	v
+do_page_fault	watch-pro.c	/^do_page_fault(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+draw	alifo.h	/^	unsigned long draw;$/;"	m	struct:__anon6
+end	alifo.h	/^	unsigned long end;				\/* exclusive *\/$/;"	m	struct:__anon8
+end	clock-pro.h	/^	unsigned long end;				\/* exclusive *\/$/;"	m	struct:__anon32
+end	mallocstat.h	/^	unsigned long end;				\/* exclusive *\/$/;"	m	struct:__anon17
+end	opt.h	/^	unsigned long end;				\/* exclusive *\/$/;"	m	struct:__anon24
+end	watch-pro.h	/^	unsigned long end;				\/* exclusive *\/$/;"	m	struct:__anon15
+end_challenge	alifo.c	/^end_challenge(pol_t *pol, struct page *page, int winner)$/;"	f	file:
+entry	alifo.h	/^	struct list_head entry;$/;"	m	struct:__anon8	typeref:struct:__anon8::list_head
+entry	clock-pro.h	/^	struct list_head entry;$/;"	m	struct:__anon32	typeref:struct:__anon32::list_head
+entry	mallocstat.h	/^	struct list_head entry;$/;"	m	struct:__anon17	typeref:struct:__anon17::list_head
+entry	opt.h	/^	struct list_head entry;$/;"	m	struct:__anon24	typeref:struct:__anon24::list_head
+entry	opt.h	/^	struct list_head entry;$/;"	m	struct:ref_node_t	typeref:struct:ref_node_t::list_head
+entry	seq.h	/^	struct list_head entry;$/;"	m	struct:__anon20	typeref:struct:__anon20::list_head
+entry	watch-pro.h	/^	struct list_head entry;$/;"	m	struct:__anon15	typeref:struct:__anon15::list_head
+eval_challenge	alifo.c	/^eval_challenge(pol_t *pol, struct page *page)$/;"	f	file:
+evict_cold_page	clock-pro.c	/^void evict_cold_page(clock_pro_t *clock)$/;"	f
+evict_cold_pages	watch-pro.c	/^evict_cold_pages(gclock_t *gclock)$/;"	f	file:
+evict_page_CLOCK	clock.c	/^void evict_page_CLOCK(policy_t *self)$/;"	f
+evict_page_FIFO	fifo.c	/^void evict_page_FIFO(policy_t *self)$/;"	f
+evict_page_LRU	lru.c	/^void evict_page_LRU(policy_t *self)$/;"	f
+evict_page_SEQ	seq.c	/^void evict_page_SEQ(policy_t *self)$/;"	f
+evict_page_aLIFO	alifo.c	/^void evict_page_aLIFO(policy_t *self)$/;"	f
+evict_page_clock	seq.c	/^evict_page_clock(data_SEQ_t *data)$/;"	f	file:
+evict_victims	alifo.c	/^evict_victims(data_aLIFO_t *data, pol_t *pol, struct page *clock,$/;"	f	file:
+evicted	alifo.c	/^	bool evicted;					\/* true if evicted by chal or curr *\/$/;"	m	struct:__anon2	file:
+fault_time	seq.h	/^	unsigned long fault_time;$/;"	m	struct:__anon19
+fault_time	seq.h	/^	unsigned long fault_time[N];$/;"	m	struct:__anon20
+find_mem_area	alifo.c	/^find_mem_area(data_aLIFO_t *data, unsigned long addr)$/;"	f	file:
+find_mem_area	clock-pro.c	/^find_mem_area(data_CLOCK_Pro_t *data, unsigned long addr)$/;"	f	file:
+find_mem_area	opt.c	/^find_mem_area(data_OPT_t *data, unsigned long addr)$/;"	f	file:
+find_watch	watch-pro.c	/^find_watch(data_WATCH_Pro_t *data, unsigned long addr)$/;"	f	file:
+fini_CLOCK	clock.c	/^void fini_CLOCK(policy_t *self)$/;"	f
+fini_CLOCK_Pro	clock-pro.c	/^void fini_CLOCK_Pro(policy_t *self)$/;"	f
+fini_FIFO	fifo.c	/^void fini_FIFO(policy_t *self)$/;"	f
+fini_LRU	lru.c	/^void fini_LRU(policy_t *self)$/;"	f
+fini_OPT	opt.c	/^void fini_OPT(policy_t *self)$/;"	f
+fini_SEQ	seq.c	/^void fini_SEQ(policy_t *self)$/;"	f
+fini_WATCH_Pro	watch-pro.c	/^void fini_WATCH_Pro(policy_t *self)$/;"	f
+fini_aLIFO	alifo.c	/^void fini_aLIFO(policy_t *self)$/;"	f
+fini_mallocstat	mallocstat.c	/^void fini_mallocstat(policy_t *self)$/;"	f
+free_mem_area	alifo.c	/^free_mem_area(data_aLIFO_t *data, unsigned long addr)$/;"	f	file:
+free_mem_area	clock-pro.c	/^free_mem_area(data_CLOCK_Pro_t *data, unsigned long addr)$/;"	f	file:
+free_mem_area	mallocstat.c	/^free_mem_area(data_mallocstat_t *data, unsigned long addr)$/;"	f	file:
+free_mem_area	opt.c	/^free_mem_area(data_OPT_t *data, unsigned long addr)$/;"	f	file:
+free_mem_area	watch-pro.c	/^free_mem_area(data_WATCH_Pro_t *data, unsigned long addr)$/;"	f	file:
+free_page_md	alifo.c	/^free_page_md(struct page *page)$/;"	f	file:
+free_page_md	clock-pro.c	/^static inline void free_page_md(struct page *page)$/;"	f	file:
+free_page_md	watch-pro.c	/^free_page_md(struct page *page)$/;"	f	file:
+gclock	watch-pro.h	/^	gclock_t *gclock;$/;"	m	struct:__anon16
+gclock_cold_max	watch-pro.c	/^gclock_cold_max(gclock_t *gclock)$/;"	f	file:
+gclock_get_cold_page_move	watch-pro.c	/^gclock_get_cold_page_move(gclock_t *gclock)$/;"	f	file:
+gclock_get_ghost_page_move	watch-pro.c	/^gclock_get_ghost_page_move(gclock_t *gclock)$/;"	f	file:
+gclock_get_page_move	watch-pro.c	/^gclock_get_page_move(struct list_head **hptr)$/;"	f	file:
+gclock_init	watch-pro.c	/^gclock_init(gclock_t **gclock, unsigned long nr_pages)$/;"	f	file:
+gclock_stat_t	watch-pro.h	/^} gclock_stat_t;$/;"	t	typeref:struct:__anon10
+gclock_t	watch-pro.h	/^} gclock_t;$/;"	t	typeref:struct:__anon12
+get_lifo_score	alifo.c	/^get_lifo_score(pol_t* pol)$/;"	f	file:
+get_ref_node_last	opt.c	/^get_ref_node_last(struct page *page)$/;"	f	file:
+ghost_list	alifo.h	/^	struct list_head ghost_list;$/;"	m	struct:__anon9	typeref:struct:__anon9::list_head
+ghost_overfull	alifo.c	/^ghost_overfull(data_aLIFO_t *data)$/;"	f	file:
+ghot	watch-pro.c	/^	bool ghot;						\/* global hotness *\/$/;"	m	struct:__anon1	file:
+global_cold_empty	watch-pro.c	/^global_cold_empty(gclock_t *gclock)$/;"	f	file:
+global_cold_overfull	watch-pro.c	/^global_cold_overfull(gclock_t *gclock)$/;"	f	file:
+global_empty	watch-pro.c	/^global_empty(gclock_t *gclock)$/;"	f	file:
+global_full	watch-pro.c	/^global_full(gclock_t *gclock)$/;"	f	file:
+global_ghost_empty	watch-pro.c	/^global_ghost_empty(gclock_t *gclock)$/;"	f	file:
+global_ghost_overfull	watch-pro.c	/^global_ghost_overfull(gclock_t *gclock)$/;"	f	file:
+global_hot_empty	watch-pro.c	/^global_hot_empty(gclock_t *gclock)$/;"	f	file:
+global_hot_overfull	watch-pro.c	/^global_hot_overfull(gclock_t *gclock)$/;"	f	file:
+global_seq_t	seq.h	/^} global_seq_t;$/;"	t	typeref:struct:__anon19
+global_victim_clock	alifo.c	/^global_victim_clock(data_aLIFO_t *data, struct list_head *page_list)$/;"	f	file:
+gref	alifo.c	/^	bool gref;						\/* global ref *\/$/;"	m	struct:__anon2	file:
+gref	watch-pro.c	/^	bool gref;						\/* gclock ref *\/$/;"	m	struct:__anon1	file:
+gseq	seq.h	/^	global_seq_t *gseq;$/;"	m	struct:__anon21
+gseq_init	seq.c	/^gseq_init(global_seq_t **gseq)$/;"	f	file:
+gtesting	watch-pro.c	/^	bool gtesting;					\/* is the page in the stack S in LIRS? *\/$/;"	m	struct:__anon1	file:
+hand_cold	clock-pro.h	/^	struct list_head *hand_cold;$/;"	m	struct:__anon28	typeref:struct:__anon28::list_head
+hand_hot	clock-pro.h	/^	struct list_head *hand_hot;$/;"	m	struct:__anon28	typeref:struct:__anon28::list_head
+hand_hot	watch-pro.h	/^	struct list_head *hand_hot;$/;"	m	struct:__anon12	typeref:struct:__anon12::list_head
+hand_hot	watch-pro.h	/^	struct list_head *hand_hot;$/;"	m	struct:__anon13	typeref:struct:__anon13::list_head
+hand_test	clock-pro.h	/^	struct list_head *hand_test;$/;"	m	struct:__anon28	typeref:struct:__anon28::list_head
+hand_test	watch-pro.h	/^	struct list_head *hand_test;$/;"	m	struct:__anon12	typeref:struct:__anon12::list_head
+high_end	seq.h	/^	unsigned long high_end;$/;"	m	struct:__anon20
+hot	clock-pro.c	/^	bool hot;$/;"	m	struct:__anon3	file:
+in_init	clock-pro.c	/^in_init(clock_pro_t *clock)$/;"	f	file:
+inc_cold_ratio_global	watch-pro.c	/^inc_cold_ratio_global(gclock_t *gclock)$/;"	f	file:
+inc_cold_ratio_local	watch-pro.c	/^inc_cold_ratio_local(watch_t *watch)$/;"	f	file:
+inc_cold_size	clock-pro.c	/^inc_cold_size(clock_pro_t *clock)$/;"	f	file:
+init_CLOCK	clock.c	/^void init_CLOCK(policy_t *self, unsigned long memsz)$/;"	f
+init_CLOCK_Pro	clock-pro.c	/^void init_CLOCK_Pro(policy_t *self, unsigned long memsz)$/;"	f
+init_FIFO	fifo.c	/^void init_FIFO(policy_t *self, unsigned long memsz)$/;"	f
+init_LRU	lru.c	/^void init_LRU(policy_t *self, unsigned long memsz)$/;"	f
+init_OPT	opt.c	/^void init_OPT(policy_t *self, unsigned long memsz)$/;"	f
+init_SEQ	seq.c	/^void init_SEQ(policy_t *self, unsigned long memsz)$/;"	f
+init_WATCH_Pro	watch-pro.c	/^void init_WATCH_Pro(policy_t *self, unsigned long memsz)$/;"	f
+init_aLIFO	alifo.c	/^void init_aLIFO(policy_t *self, unsigned long memsz)$/;"	f
+init_mallocstat	mallocstat.c	/^void init_mallocstat(policy_t *self, unsigned long memsz)$/;"	f
+initial_weight	alifo.c	/^long double initial_weight;$/;"	v
+insert_cand	opt.c	/^insert_cand(struct avl_tree_node **avl, ref_node_t *node)$/;"	f	file:
+insert_locked	opt.c	/^insert_locked(struct avl_tree_node **avl, ref_node_t *node)$/;"	f	file:
+is_buffer_full	clock-pro.c	/^is_buffer_full(clock_pro_t *clock)$/;"	f	file:
+is_cold_full	clock-pro.c	/^is_cold_full(clock_pro_t *clock)$/;"	f	file:
+is_cold_overfull	clock-pro.c	/^is_cold_overfull(clock_pro_t *clock)$/;"	f	file:
+is_full_CLOCK	clock.c	/^static inline bool is_full_CLOCK(policy_t *self)$/;"	f	file:
+is_full_FIFO	fifo.c	/^static inline bool is_full_FIFO(policy_t *self)$/;"	f	file:
+is_full_LRU	lru.c	/^static inline bool is_full_LRU(policy_t *self)$/;"	f	file:
+is_full_SEQ	seq.c	/^static inline bool is_full_SEQ(policy_t *self)$/;"	f	file:
+is_full_aLIFO	alifo.c	/^static inline bool is_full_aLIFO(policy_t *self)$/;"	f	file:
+is_full_mallocstat	mallocstat.c	/^static inline bool is_full_mallocstat(policy_t *self)$/;"	f	file:
+is_ghost_overfull	clock-pro.c	/^is_ghost_overfull(clock_pro_t *clock)$/;"	f	file:
+is_hot_empty	clock-pro.c	/^is_hot_empty(clock_pro_t *clock)$/;"	f	file:
+is_hot_full	clock-pro.c	/^is_hot_full(clock_pro_t *clock)$/;"	f	file:
+is_hot_overfull	clock-pro.c	/^is_hot_overfull(clock_pro_t *clock)$/;"	f	file:
+isolate_page	clock-pro.c	/^void isolate_page(clock_pro_t *clock, struct page *page)$/;"	f
+isolate_page	watch-pro.c	/^isolate_page(gclock_t *gclock, struct page *page)$/;"	f	file:
+isolate_page_global	watch-pro.c	/^isolate_page_global(gclock_t *gclock, struct page *page)$/;"	f	file:
+isolate_page_local	watch-pro.c	/^isolate_page_local(watch_t *watch, struct page *page)$/;"	f	file:
+last	opt.c	/^	ref_node_t *last;$/;"	m	struct:__anon4	file:
+last_stime	alifo.h	/^	unsigned long last_stime;$/;"	m	struct:__anon7
+learning_rate	alifo.c	/^long double learning_rate;$/;"	v
+lifo	alifo.c	/^	bool lifo;						\/* true iif curr is lifo at eviction *\/$/;"	m	struct:__anon2	file:
+lifo	alifo.h	/^	bool lifo;$/;"	m	struct:__anon7
+lifo_weight	alifo.h	/^	long double lifo_weight;$/;"	m	struct:__anon7
+lifo_win	alifo.h	/^	unsigned long lifo_win;$/;"	m	struct:__anon6
+locked_node	opt.h	/^	struct avl_tree_node locked_node;$/;"	m	struct:ref_node_t	typeref:struct:ref_node_t::avl_tree_node
+low_end	seq.h	/^	unsigned long low_end;$/;"	m	struct:__anon20
+lref	alifo.c	/^	bool lref;						\/* local ref *\/$/;"	m	struct:__anon2	file:
+ma	clock-pro.c	/^	mem_area_t *ma;$/;"	m	struct:__anon3	file:
+ma_alloc_cnt	alifo.h	/^	unsigned long ma_alloc_cnt;$/;"	m	struct:__anon5
+ma_alloc_cnt	clock-pro.h	/^	unsigned long ma_alloc_cnt;$/;"	m	struct:__anon31
+ma_alloc_cnt	opt.h	/^	unsigned long ma_alloc_cnt;$/;"	m	struct:__anon23
+ma_alloc_cnt	watch-pro.h	/^	unsigned long ma_alloc_cnt;$/;"	m	struct:__anon14
+ma_free_cnt	alifo.h	/^	unsigned long ma_free_cnt;$/;"	m	struct:__anon5
+ma_free_cnt	clock-pro.h	/^	unsigned long ma_free_cnt;$/;"	m	struct:__anon31
+ma_free_cnt	opt.h	/^	unsigned long ma_free_cnt;$/;"	m	struct:__anon23
+ma_free_cnt	watch-pro.h	/^	unsigned long ma_free_cnt;$/;"	m	struct:__anon14
+ma_list	alifo.h	/^	struct list_head ma_list;$/;"	m	struct:__anon9	typeref:struct:__anon9::list_head
+ma_list	clock-pro.h	/^	struct list_head ma_list;$/;"	m	struct:__anon33	typeref:struct:__anon33::list_head
+ma_list	mallocstat.h	/^	struct list_head ma_list;$/;"	m	struct:__anon18	typeref:struct:__anon18::list_head
+ma_list	opt.h	/^	struct list_head ma_list;$/;"	m	struct:__anon25	typeref:struct:__anon25::list_head
+ma_list	watch-pro.h	/^	struct list_head ma_list;$/;"	m	struct:__anon16	typeref:struct:__anon16::list_head
+ma_list_obs	mallocstat.h	/^	struct list_head ma_list_obs;$/;"	m	struct:__anon18	typeref:struct:__anon18::list_head
+ma_stat_t	clock-pro.h	/^} ma_stat_t;$/;"	t	typeref:struct:__anon30
+ma_stat_t	opt.h	/^} ma_stat_t;$/;"	t	typeref:struct:__anon22
+malloc_CLOCK	clock.c	/^int malloc_CLOCK(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_CLOCK_Pro	clock-pro.c	/^int malloc_CLOCK_Pro(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_FIFO	fifo.c	/^int malloc_FIFO(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_LRU	lru.c	/^int malloc_LRU(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_OPT	opt.c	/^int malloc_OPT(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_SEQ	seq.c	/^int malloc_SEQ(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_WATCH_Pro	watch-pro.c	/^int malloc_WATCH_Pro(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_aLIFO	alifo.c	/^int malloc_aLIFO(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_cnt	alifo.h	/^	unsigned long malloc_cnt;$/;"	m	struct:__anon5
+malloc_cnt	clock-pro.h	/^	unsigned long malloc_cnt;$/;"	m	struct:__anon31
+malloc_cnt	opt.h	/^	unsigned long malloc_cnt;$/;"	m	struct:__anon23
+malloc_cnt	watch-pro.h	/^	unsigned long malloc_cnt;$/;"	m	struct:__anon14
+malloc_mallocstat	mallocstat.c	/^int malloc_mallocstat(policy_t *self, unsigned long addr, unsigned long size)$/;"	f
+malloc_size_acc	alifo.h	/^	unsigned long malloc_size_acc;$/;"	m	struct:__anon5
+malloc_size_acc	clock-pro.h	/^	unsigned long malloc_size_acc;$/;"	m	struct:__anon31
+malloc_size_acc	opt.h	/^	unsigned long malloc_size_acc;$/;"	m	struct:__anon23
+malloc_size_acc	watch-pro.h	/^	unsigned long malloc_size_acc;$/;"	m	struct:__anon14
+malloc_size_max	alifo.h	/^	unsigned long malloc_size_max;$/;"	m	struct:__anon5
+malloc_size_max	clock-pro.h	/^	unsigned long malloc_size_max;$/;"	m	struct:__anon31
+malloc_size_max	opt.h	/^	unsigned long malloc_size_max;$/;"	m	struct:__anon23
+malloc_size_max	watch-pro.h	/^	unsigned long malloc_size_max;$/;"	m	struct:__anon14
+marked	alifo.c	/^	bool marked;					\/* marked if chosen by challenger *\/$/;"	m	struct:__anon2	file:
+max	watch-pro.c	23;"	d	file:
+mem_area_init	alifo.c	/^mem_area_init(mem_area_t **ma, unsigned long req_start, unsigned long req_end,$/;"	f	file:
+mem_area_init	clock-pro.c	/^mem_area_init(mem_area_t **ma, unsigned long req_start, unsigned long req_end,$/;"	f	file:
+mem_area_init	mallocstat.c	/^mem_area_init(mem_area_t **ma, unsigned long req_start, unsigned long req_end,$/;"	f	file:
+mem_area_init	opt.c	/^mem_area_init(mem_area_t **ma, unsigned long req_start, unsigned long req_end,$/;"	f	file:
+mem_area_init	watch-pro.c	/^mem_area_init(mem_area_t **ma, unsigned long req_start, unsigned long req_end,$/;"	f	file:
+mem_area_t	alifo.h	/^} mem_area_t;$/;"	t	typeref:struct:__anon8
+mem_area_t	clock-pro.h	/^} mem_area_t;$/;"	t	typeref:struct:__anon32
+mem_area_t	mallocstat.h	/^} mem_area_t;$/;"	t	typeref:struct:__anon17
+mem_area_t	opt.h	/^} mem_area_t;$/;"	t	typeref:struct:__anon24
+mem_area_t	watch-pro.h	/^} mem_area_t;$/;"	t	typeref:struct:__anon15
+mem_stat	alifo.h	/^	mem_stat_t *mem_stat;$/;"	m	struct:__anon9
+mem_stat	clock-pro.h	/^	mem_stat_t *mem_stat;$/;"	m	struct:__anon33
+mem_stat	opt.h	/^	mem_stat_t *mem_stat;$/;"	m	struct:__anon25
+mem_stat	watch-pro.h	/^	mem_stat_t *mem_stat;$/;"	m	struct:__anon16
+mem_stat_t	alifo.h	/^} mem_stat_t;$/;"	t	typeref:struct:__anon5
+mem_stat_t	clock-pro.h	/^} mem_stat_t;$/;"	t	typeref:struct:__anon31
+mem_stat_t	opt.h	/^} mem_stat_t;$/;"	t	typeref:struct:__anon23
+mem_stat_t	watch-pro.h	/^} mem_stat_t;$/;"	t	typeref:struct:__anon14
+mfree_CLOCK	clock.c	/^int mfree_CLOCK(policy_t *self, unsigned long addr)$/;"	f
+mfree_CLOCK_Pro	clock-pro.c	/^int mfree_CLOCK_Pro(policy_t *self, unsigned long addr)$/;"	f
+mfree_FIFO	fifo.c	/^int mfree_FIFO(policy_t *self, unsigned long addr)$/;"	f
+mfree_LRU	lru.c	/^int mfree_LRU(policy_t *self, unsigned long addr)$/;"	f
+mfree_OPT	opt.c	/^int mfree_OPT(policy_t *self, unsigned long addr)$/;"	f
+mfree_SEQ	seq.c	/^int mfree_SEQ(policy_t *self, unsigned long addr)$/;"	f
+mfree_WATCH_Pro	watch-pro.c	/^int mfree_WATCH_Pro(policy_t *self, unsigned long addr)$/;"	f
+mfree_aLIFO	alifo.c	/^int mfree_aLIFO(policy_t *self, unsigned long addr)$/;"	f
+mfree_cnt	alifo.h	/^	unsigned long mfree_cnt;$/;"	m	struct:__anon5
+mfree_cnt	clock-pro.h	/^	unsigned long mfree_cnt;$/;"	m	struct:__anon31
+mfree_cnt	opt.h	/^	unsigned long mfree_cnt;$/;"	m	struct:__anon23
+mfree_cnt	watch-pro.h	/^	unsigned long mfree_cnt;$/;"	m	struct:__anon14
+mfree_mallocstat	mallocstat.c	/^int mfree_mallocstat(policy_t *self, unsigned long addr)$/;"	f
+min	watch-pro.c	24;"	d	file:
+most_recent_idx	seq.h	/^	int most_recent_idx;$/;"	m	struct:__anon20
+move_hand	clock-pro.c	/^static inline void move_hand(struct list_head **hand, struct list_head *head)$/;"	f	file:
+move_hand_cold	clock-pro.c	/^static inline void move_hand_cold(clock_pro_t *clock)$/;"	f	file:
+move_hand_cold_global	watch-pro.c	/^move_hand_cold_global(gclock_t *gclock)$/;"	f	file:
+move_hand_cold_local	watch-pro.c	/^move_hand_cold_local(gclock_t *gclock, watch_t *watch)$/;"	f	file:
+move_hand_hot	clock-pro.c	/^static inline void move_hand_hot(clock_pro_t *clock)$/;"	f	file:
+move_hand_test	clock-pro.c	/^static inline void move_hand_test(clock_pro_t *clock)$/;"	f	file:
+mrf	watch-pro.h	/^	struct page *mrf;$/;"	m	struct:__anon13	typeref:struct:__anon13::page
+need_run_hand_cold	clock-pro.c	/^need_run_hand_cold(clock_pro_t *clock)$/;"	f	file:
+need_run_hand_hot	clock-pro.c	/^need_run_hand_hot(clock_pro_t *clock)$/;"	f	file:
+need_run_hand_test	clock-pro.c	/^need_run_hand_test(clock_pro_t *clock)$/;"	f	file:
+new_ref_node	opt.c	/^new_ref_node(struct list_head *ref_graph, unsigned long vpn,$/;"	f	file:
+new_seq	seq.c	/^new_seq(unsigned long vpn, unsigned long fault_time)$/;"	f	file:
+next	opt.h	/^	struct ref_node_t *next;$/;"	m	struct:ref_node_t	typeref:struct:ref_node_t::ref_node_t
+nr_clock	alifo.h	/^	unsigned long nr_clock;$/;"	m	struct:__anon6
+nr_cold	clock-pro.h	/^	unsigned long nr_cold;			\/\/ resident cold pages: max: nr_cold_max$/;"	m	struct:__anon28
+nr_cold	clock-pro.h	/^	unsigned long nr_cold;			\/\/ resident cold pages: max: nr_cold_max$/;"	m	struct:__anon32
+nr_cold	watch-pro.h	/^	unsigned long nr_cold;$/;"	m	struct:__anon12
+nr_cold	watch-pro.h	/^	unsigned long nr_cold;$/;"	m	struct:__anon13
+nr_cold_acc	clock-pro.h	/^	unsigned long nr_cold_acc;$/;"	m	struct:__anon29
+nr_cold_acc	clock-pro.h	/^	unsigned long nr_cold_acc;$/;"	m	struct:__anon30
+nr_cold_acc	watch-pro.h	/^	unsigned long nr_cold_acc;$/;"	m	struct:__anon10
+nr_cold_acc	watch-pro.h	/^	unsigned long nr_cold_acc;$/;"	m	struct:__anon11
+nr_cold_global	watch-pro.h	/^	unsigned long nr_cold_global;$/;"	m	struct:__anon13
+nr_cold_global_acc	watch-pro.h	/^	unsigned long nr_cold_global_acc;$/;"	m	struct:__anon11
+nr_cold_max	clock-pro.h	/^	unsigned long nr_cold_max;		\/\/ self-tuning parameter; 0 at first$/;"	m	struct:__anon28
+nr_cold_max_acc	clock-pro.h	/^	unsigned long nr_cold_max_acc;$/;"	m	struct:__anon29
+nr_cold_max_acc	clock-pro.h	/^	unsigned long nr_cold_max_acc;$/;"	m	struct:__anon30
+nr_cold_max_acc	watch-pro.h	/^	unsigned long nr_cold_max_acc;$/;"	m	struct:__anon10
+nr_cold_max_acc	watch-pro.h	/^	unsigned long nr_cold_max_acc;$/;"	m	struct:__anon11
+nr_demote	clock-pro.h	/^	unsigned long nr_demote;$/;"	m	struct:__anon30
+nr_demote	watch-pro.h	/^	unsigned long nr_demote;$/;"	m	struct:__anon10
+nr_demote	watch-pro.h	/^	unsigned long nr_demote;$/;"	m	struct:__anon11
+nr_entry	alifo.h	/^	unsigned long nr_entry;$/;"	m	struct:__anon7
+nr_ghost	alifo.h	/^	unsigned long nr_ghost;$/;"	m	struct:__anon9
+nr_ghost	clock-pro.h	/^	unsigned long nr_ghost;			\/\/ non-resident cold pages; max: nr_pages$/;"	m	struct:__anon28
+nr_ghost	clock-pro.h	/^	unsigned long nr_ghost;			\/\/ non-resident cold pages; max: nr_pages$/;"	m	struct:__anon32
+nr_ghost	watch-pro.h	/^	unsigned long nr_ghost;$/;"	m	struct:__anon12
+nr_ghost	watch-pro.h	/^	unsigned long nr_ghost;$/;"	m	struct:__anon13
+nr_ghost_acc	clock-pro.h	/^	unsigned long nr_ghost_acc;$/;"	m	struct:__anon29
+nr_ghost_acc	clock-pro.h	/^	unsigned long nr_ghost_acc;$/;"	m	struct:__anon30
+nr_ghost_acc	watch-pro.h	/^	unsigned long nr_ghost_acc;$/;"	m	struct:__anon10
+nr_ghost_acc	watch-pro.h	/^	unsigned long nr_ghost_acc;$/;"	m	struct:__anon11
+nr_ghost_max	clock-pro.h	/^	unsigned long nr_ghost_max;		\/\/ same as nr_pages$/;"	m	struct:__anon28
+nr_ghost_max	watch-pro.h	/^	unsigned long nr_ghost_max;$/;"	m	struct:__anon12
+nr_hand_cold_move	clock-pro.h	/^	unsigned long nr_hand_cold_move;$/;"	m	struct:__anon30
+nr_hand_cold_move	watch-pro.h	/^	unsigned long nr_hand_cold_move;$/;"	m	struct:__anon10
+nr_hand_cold_move	watch-pro.h	/^	unsigned long nr_hand_cold_move;$/;"	m	struct:__anon11
+nr_hand_hot_move	clock-pro.h	/^	unsigned long nr_hand_hot_move;		\/* sum of each watch's move *\/$/;"	m	struct:__anon30
+nr_hand_hot_move	watch-pro.h	/^	unsigned long nr_hand_hot_move;$/;"	m	struct:__anon10
+nr_hand_hot_move	watch-pro.h	/^	unsigned long nr_hand_hot_move;$/;"	m	struct:__anon11
+nr_hand_test_move	clock-pro.h	/^	unsigned long nr_hand_test_move;$/;"	m	struct:__anon30
+nr_hand_test_move	watch-pro.h	/^	unsigned long nr_hand_test_move;$/;"	m	struct:__anon10
+nr_hot	clock-pro.h	/^	unsigned long nr_hot;$/;"	m	struct:__anon28
+nr_hot	clock-pro.h	/^	unsigned long nr_hot;$/;"	m	struct:__anon32
+nr_hot	watch-pro.h	/^	unsigned long nr_hot;$/;"	m	struct:__anon12
+nr_hot	watch-pro.h	/^	unsigned long nr_hot;$/;"	m	struct:__anon13
+nr_hot_acc	clock-pro.h	/^	unsigned long nr_hot_acc;$/;"	m	struct:__anon29
+nr_hot_acc	clock-pro.h	/^	unsigned long nr_hot_acc;$/;"	m	struct:__anon30
+nr_hot_acc	watch-pro.h	/^	unsigned long nr_hot_acc;$/;"	m	struct:__anon10
+nr_hot_acc	watch-pro.h	/^	unsigned long nr_hot_acc;$/;"	m	struct:__anon11
+nr_hot_global	watch-pro.h	/^	unsigned long nr_hot_global;$/;"	m	struct:__anon13
+nr_hot_global_acc	watch-pro.h	/^	unsigned long nr_hot_global_acc;$/;"	m	struct:__anon11
+nr_lifo	alifo.h	/^	unsigned long nr_lifo;$/;"	m	struct:__anon6
+nr_mem_area	alifo.h	/^	unsigned long nr_mem_area;$/;"	m	struct:__anon5
+nr_mem_area	clock-pro.h	/^	unsigned long nr_mem_area;$/;"	m	struct:__anon31
+nr_mem_area	opt.h	/^	unsigned long nr_mem_area;$/;"	m	struct:__anon23
+nr_mem_area	watch-pro.h	/^	unsigned long nr_mem_area;$/;"	m	struct:__anon14
+nr_pages	alifo.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon9
+nr_pages	clock-pro.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon28
+nr_pages	clock.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon27
+nr_pages	fifo.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon26
+nr_pages	lru.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon34
+nr_pages	mallocstat.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon18
+nr_pages	opt.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon25
+nr_pages	seq.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon21
+nr_pages	watch-pro.h	/^	unsigned long nr_pages;$/;"	m	struct:__anon12
+nr_pol_entry	alifo.c	/^nr_pol_entry(pol_t *pol)$/;"	f	file:
+nr_present	alifo.h	/^	unsigned long nr_present;$/;"	m	struct:__anon7
+nr_present	alifo.h	/^	unsigned long nr_present;$/;"	m	struct:__anon9
+nr_present	clock.h	/^	unsigned long nr_present;$/;"	m	struct:__anon27
+nr_present	fifo.h	/^	unsigned long nr_present;$/;"	m	struct:__anon26
+nr_present	lru.h	/^	unsigned long nr_present;$/;"	m	struct:__anon34
+nr_present	mallocstat.h	/^	unsigned long nr_present;$/;"	m	struct:__anon18
+nr_present	opt.h	/^	unsigned long nr_present;$/;"	m	struct:__anon24
+nr_present	opt.h	/^	unsigned long nr_present;$/;"	m	struct:__anon25
+nr_present	seq.h	/^	unsigned long nr_present;$/;"	m	struct:__anon21
+nr_present_acc	alifo.h	/^	unsigned long nr_present_acc;$/;"	m	struct:__anon6
+nr_present_acc	clock-pro.h	/^	unsigned long nr_present_acc;$/;"	m	struct:__anon29
+nr_present_acc	clock-pro.h	/^	unsigned long nr_present_acc;$/;"	m	struct:__anon30
+nr_present_acc	opt.h	/^	unsigned long nr_present_acc;$/;"	m	struct:__anon22
+nr_present_acc	watch-pro.h	/^	unsigned long nr_present_acc;$/;"	m	struct:__anon10
+nr_present_acc	watch-pro.h	/^	unsigned long nr_present_acc;$/;"	m	struct:__anon11
+nr_promote	clock-pro.h	/^	unsigned long nr_promote;$/;"	m	struct:__anon30
+nr_promote	watch-pro.h	/^	unsigned long nr_promote;$/;"	m	struct:__anon10
+nr_promote	watch-pro.h	/^	unsigned long nr_promote;$/;"	m	struct:__anon11
+nr_ref	alifo.h	/^	unsigned long nr_ref;$/;"	m	struct:__anon6
+nr_ref	clock-pro.h	/^	unsigned long nr_ref;$/;"	m	struct:__anon29
+nr_ref	clock-pro.h	/^	unsigned long nr_ref;$/;"	m	struct:__anon30
+nr_ref	opt.h	/^	unsigned long nr_ref;$/;"	m	struct:__anon22
+nr_ref	watch-pro.h	/^	unsigned long nr_ref;$/;"	m	struct:__anon10
+nr_ref	watch-pro.h	/^	unsigned long nr_ref;$/;"	m	struct:__anon11
+nr_seq	seq.h	/^	int nr_seq;$/;"	m	struct:__anon19
+obsolete	alifo.h	/^	bool obsolete;$/;"	m	struct:__anon8
+obsolete	clock-pro.h	/^	bool obsolete;$/;"	m	struct:__anon32
+obsolete	opt.h	/^	bool obsolete;$/;"	m	struct:__anon24
+obsolete	watch-pro.h	/^	bool obsolete;					\/* is in freed memory area *\/$/;"	m	struct:__anon13
+page_challenging	alifo.c	96;"	d	file:
+page_evict_clock	alifo.c	93;"	d	file:
+page_evict_lifo	alifo.c	92;"	d	file:
+page_evicted	alifo.c	88;"	d	file:
+page_fault	alifo.c	/^page_fault(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault	watch-pro.c	/^page_fault(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault_CLOCK	clock.c	/^page_fault_CLOCK(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault_CLOCK_Pro	clock-pro.c	/^page_fault_CLOCK_Pro(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault_FIFO	fifo.c	/^page_fault_FIFO(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault_LRU	lru.c	/^page_fault_LRU(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault_SEQ	seq.c	/^page_fault_SEQ(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault_aLIFO	alifo.c	/^page_fault_aLIFO(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_fault_ghost	alifo.c	/^page_fault_ghost(policy_t *self, unsigned long addr, struct page *page)$/;"	f	file:
+page_hit	watch-pro.c	/^page_hit(policy_t *self, struct page *page)$/;"	f	file:
+page_hit_CLOCK	clock.c	/^page_hit_CLOCK(policy_t *self, struct page *page)$/;"	f	file:
+page_hit_CLOCK_Pro	clock-pro.c	/^page_hit_CLOCK_Pro(policy_t *self, struct page *page)$/;"	f	file:
+page_hit_FIFO	fifo.c	/^page_hit_FIFO(policy_t *self, struct page *page)$/;"	f	file:
+page_hit_LRU	lru.c	/^page_hit_LRU(policy_t *self, struct page *page)$/;"	f	file:
+page_hit_SEQ	seq.c	/^page_hit_SEQ(policy_t *self, struct page *page)$/;"	f	file:
+page_hit_aLIFO	alifo.c	/^page_hit_aLIFO(policy_t *self, struct page *page)$/;"	f	file:
+page_hot	clock-pro.c	32;"	d	file:
+page_hot_global	watch-pro.c	42;"	d	file:
+page_hot_local	watch-pro.c	41;"	d	file:
+page_list	alifo.h	/^	struct list_head page_list;$/;"	m	struct:__anon7	typeref:struct:__anon7::list_head
+page_list	alifo.h	/^	struct list_head page_list;$/;"	m	struct:__anon9	typeref:struct:__anon9::list_head
+page_list	clock-pro.h	/^	struct list_head page_list;$/;"	m	struct:__anon28	typeref:struct:__anon28::list_head
+page_list	clock.h	/^	struct list_head page_list;$/;"	m	struct:__anon27	typeref:struct:__anon27::list_head
+page_list	fifo.h	/^	struct list_head page_list;$/;"	m	struct:__anon26	typeref:struct:__anon26::list_head
+page_list	lru.h	/^	struct list_head page_list;$/;"	m	struct:__anon34	typeref:struct:__anon34::list_head
+page_list	opt.h	/^	struct list_head page_list;$/;"	m	struct:__anon25	typeref:struct:__anon25::list_head
+page_list	seq.h	/^	struct list_head page_list;$/;"	m	struct:__anon21	typeref:struct:__anon21::list_head
+page_list	watch-pro.h	/^	struct list_head page_list;$/;"	m	struct:__anon12	typeref:struct:__anon12::list_head
+page_list	watch-pro.h	/^	struct list_head page_list;$/;"	m	struct:__anon13	typeref:struct:__anon13::list_head
+page_md	alifo.c	84;"	d	file:
+page_md	clock-pro.c	31;"	d	file:
+page_md	opt.c	32;"	d	file:
+page_md	watch-pro.c	40;"	d	file:
+page_md_t	alifo.c	/^} page_md_t;$/;"	t	typeref:struct:__anon2	file:
+page_md_t	clock-pro.c	/^} page_md_t;$/;"	t	typeref:struct:__anon3	file:
+page_md_t	opt.c	/^} page_md_t;$/;"	t	typeref:struct:__anon4	file:
+page_md_t	watch-pro.c	/^} page_md_t;$/;"	t	typeref:struct:__anon1	file:
+page_mem_area	clock-pro.c	43;"	d	file:
+page_mkcold	clock-pro.c	37;"	d	file:
+page_mkcold_global	watch-pro.c	50;"	d	file:
+page_mkcold_local	watch-pro.c	49;"	d	file:
+page_mkghost	clock-pro.c	39;"	d	file:
+page_mkghost	watch-pro.c	52;"	d	file:
+page_mkhot	clock-pro.c	36;"	d	file:
+page_mkhot_global	watch-pro.c	48;"	d	file:
+page_mkhot_local	watch-pro.c	47;"	d	file:
+page_mknotpresent	opt.c	35;"	d	file:
+page_mkold_all	alifo.c	/^page_mkold_all(struct page *page)$/;"	f	file:
+page_mkold_all	watch-pro.c	/^page_mkold_all(struct page *page)$/;"	f	file:
+page_mkold_global	alifo.c	/^page_mkold_global(struct page *page)$/;"	f	file:
+page_mkold_global	watch-pro.c	/^page_mkold_global(struct page *page)$/;"	f	file:
+page_mkold_local	alifo.c	/^page_mkold_local(struct page *page)$/;"	f	file:
+page_mkold_local	watch-pro.c	/^page_mkold_local(struct page *page)$/;"	f	file:
+page_mkpresent	opt.c	34;"	d	file:
+page_mkresident	clock-pro.c	38;"	d	file:
+page_mkresident	watch-pro.c	51;"	d	file:
+page_mkyoung_global	watch-pro.c	/^page_mkyoung_global(struct page *page)$/;"	f	file:
+page_mkyoung_local	watch-pro.c	/^page_mkyoung_local(struct page *page)$/;"	f	file:
+page_pevicted	alifo.c	91;"	d	file:
+page_pol	alifo.c	85;"	d	file:
+page_present	alifo.c	89;"	d	file:
+page_present	opt.c	33;"	d	file:
+page_resident	clock-pro.c	33;"	d	file:
+page_resident	watch-pro.c	43;"	d	file:
+page_set_mem_area	clock-pro.c	45;"	d	file:
+page_set_watch	watch-pro.c	65;"	d	file:
+page_starttime	alifo.c	95;"	d	file:
+page_test_end	clock-pro.c	41;"	d	file:
+page_test_end_global	watch-pro.c	60;"	d	file:
+page_test_end_local	watch-pro.c	58;"	d	file:
+page_test_start	clock-pro.c	40;"	d	file:
+page_test_start_global	watch-pro.c	56;"	d	file:
+page_test_start_local	watch-pro.c	54;"	d	file:
+page_testing	clock-pro.c	34;"	d	file:
+page_testing_global	watch-pro.c	45;"	d	file:
+page_testing_local	watch-pro.c	44;"	d	file:
+page_vevicted	alifo.c	90;"	d	file:
+page_watch	watch-pro.c	63;"	d	file:
+page_young_global	alifo.c	/^page_young_global(struct page *page)$/;"	f	file:
+page_young_global	watch-pro.c	/^page_young_global(struct page *page)$/;"	f	file:
+page_young_local	alifo.c	/^page_young_local(struct page *page)$/;"	f	file:
+page_young_local	watch-pro.c	/^page_young_local(struct page *page)$/;"	f	file:
+pevict_page	alifo.c	/^pevict_page(struct page *page, int policy)$/;"	f	file:
+pol	alifo.c	/^	pol_t *pol;$/;"	m	struct:__anon2	file:
+pol	alifo.h	/^	pol_t *pol;$/;"	m	struct:__anon8
+pol_clock	alifo.c	/^pol_clock(pol_t *pol)$/;"	f	file:
+pol_empty	alifo.c	/^pol_empty(pol_t *pol)$/;"	f	file:
+pol_init	alifo.c	/^pol_init(pol_t **pol)$/;"	f	file:
+pol_lifo	alifo.c	/^pol_lifo(pol_t *pol)$/;"	f	file:
+pol_stat_init	alifo.c	/^pol_stat_init(pol_stat_t **stat)$/;"	f	file:
+pol_stat_t	alifo.h	/^} pol_stat_t;$/;"	t	typeref:struct:__anon6
+pol_t	alifo.h	/^} pol_t;$/;"	t	typeref:struct:__anon7
+pol_victim_lifo	alifo.c	/^pol_victim_lifo(pol_t *pol)$/;"	f	file:
+policy_CLOCK	clock.c	/^policy_t policy_CLOCK = {$/;"	v
+policy_CLOCK_Pro	clock-pro.c	/^policy_t policy_CLOCK_Pro = {$/;"	v
+policy_FIFO	fifo.c	/^policy_t policy_FIFO = {$/;"	v
+policy_LRU	lru.c	/^policy_t policy_LRU = {$/;"	v
+policy_OPT	opt.c	/^policy_t policy_OPT = {$/;"	v
+policy_SEQ	seq.c	/^policy_t policy_SEQ = {$/;"	v
+policy_WATCH_Pro	watch-pro.c	/^policy_t policy_WATCH_Pro = {$/;"	v
+policy_aLIFO	alifo.c	/^policy_t policy_aLIFO = {$/;"	v
+policy_mallocstat	mallocstat.c	/^policy_t policy_mallocstat = {$/;"	v
+post_sim_OPT	opt.c	/^post_sim_OPT(policy_t *self)$/;"	f
+pow_val	alifo.c	/^double pow_val[MAX_POW_BIT];$/;"	v
+present	alifo.c	/^	bool present;					\/* true if evicted by curr *\/$/;"	m	struct:__anon2	file:
+present	opt.c	/^	bool present;$/;"	m	struct:__anon4	file:
+print_clock_stats	clock-pro.c	/^static void print_clock_stats(clock_pro_t *clock)$/;"	f	file:
+print_global_stats	watch-pro.c	/^print_global_stats(gclock_t *gclock)$/;"	f	file:
+print_list_snapshot	clock-pro.c	/^static void print_list_snapshot(const char *str, clock_pro_t *clock)$/;"	f	file:
+print_watch_stats	watch-pro.c	/^print_watch_stats(watch_t *watch)$/;"	f	file:
+promote_ghost_page	watch-pro.c	/^promote_ghost_page(gclock_t *gclock, watch_t *watch, struct page *page)$/;"	f	file:
+promote_page	clock-pro.c	/^promote_page(clock_pro_t *clock, struct page *page)$/;"	f	file:
+promote_page_global	watch-pro.c	/^promote_page_global(gclock_t *gclock, struct page *page)$/;"	f	file:
+promote_page_local	watch-pro.c	/^promote_page_local(gclock_t *gclock, struct page *page)$/;"	f	file:
+prune_ghost_page	watch-pro.c	/^prune_ghost_page(gclock_t *gclock)$/;"	f	file:
+prune_ghost_pages	clock-pro.c	/^prune_ghost_pages(clock_pro_t *clock)$/;"	f	file:
+prune_ghost_pages	watch-pro.c	/^prune_ghost_pages(gclock_t *gclock)$/;"	f	file:
+pt	alifo.h	/^	pt_t *pt;$/;"	m	struct:__anon9
+pt	clock-pro.h	/^	pt_t *pt;$/;"	m	struct:__anon33
+pt	clock.h	/^	pt_t *pt;$/;"	m	struct:__anon27
+pt	fifo.h	/^	pt_t *pt;$/;"	m	struct:__anon26
+pt	lru.h	/^	pt_t *pt;$/;"	m	struct:__anon34
+pt	opt.h	/^	pt_t *pt;$/;"	m	struct:__anon25
+pt	seq.h	/^	pt_t *pt;$/;"	m	struct:__anon21
+pt	watch-pro.h	/^	pt_t *pt;$/;"	m	struct:__anon16
+reclaim_head	alifo.h	/^	struct list_head *reclaim_head;$/;"	m	struct:__anon7	typeref:struct:__anon7::list_head
+reclaim_head	alifo.h	/^	struct list_head *reclaim_head;$/;"	m	struct:__anon9	typeref:struct:__anon9::list_head
+record_fault_time	seq.c	/^record_fault_time(global_seq_t *gseq, seq_t *seq)$/;"	f	file:
+ref_graph	opt.h	/^	struct list_head ref_graph;$/;"	m	struct:__anon25	typeref:struct:__anon25::list_head
+ref_node_t	opt.h	/^typedef struct ref_node_t {$/;"	s
+ref_node_t	opt.h	/^} ref_node_t;$/;"	t	typeref:struct:ref_node_t
+refresh_cold_page	clock-pro.c	/^void refresh_cold_page(clock_pro_t *clock, struct page *page)$/;"	f
+refresh_cold_page_global	watch-pro.c	/^refresh_cold_page_global(gclock_t *gclock, struct page *page)$/;"	f	file:
+refresh_cold_page_local	watch-pro.c	/^refresh_cold_page_local(watch_t *watch, struct page *page)$/;"	f	file:
+refresh_page_chal	alifo.c	/^refresh_page_chal(struct page *page)$/;"	f	file:
+rel_time	opt.h	/^	unsigned long rel_time;$/;"	m	struct:__anon25
+rel_time	opt.h	/^	unsigned long rel_time;$/;"	m	struct:ref_node_t
+remove_oldest_seq	seq.c	/^remove_oldest_seq(global_seq_t *gseq)$/;"	f	file:
+remove_page	alifo.c	/^remove_page(struct page *page)$/;"	f	file:
+remove_page	clock-pro.c	/^remove_page(clock_pro_t *clock, struct page *page)$/;"	f	file:
+remove_page	watch-pro.c	/^remove_page(gclock_t *gclock, struct page *page)$/;"	f	file:
+remove_seq	seq.c	/^remove_seq(global_seq_t *gseq, seq_t *seq)$/;"	f	file:
+req_end	alifo.h	/^	unsigned long req_end;			\/* exclusive *\/$/;"	m	struct:__anon8
+req_end	clock-pro.h	/^	unsigned long req_end;			\/* exclusive *\/$/;"	m	struct:__anon32
+req_end	mallocstat.h	/^	unsigned long req_end;			\/* exclusive *\/$/;"	m	struct:__anon17
+req_end	opt.h	/^	unsigned long req_end;			\/* exclusive *\/$/;"	m	struct:__anon24
+req_end	watch-pro.h	/^	unsigned long req_end;			\/* exclusive *\/$/;"	m	struct:__anon15
+req_start	alifo.h	/^	unsigned long req_start;		\/* inclusive *\/$/;"	m	struct:__anon8
+req_start	clock-pro.h	/^	unsigned long req_start;		\/* inclusive *\/$/;"	m	struct:__anon32
+req_start	mallocstat.h	/^	unsigned long req_start;		\/* inclusive *\/$/;"	m	struct:__anon17
+req_start	opt.h	/^	unsigned long req_start;		\/* inclusive *\/$/;"	m	struct:__anon24
+req_start	watch-pro.h	/^	unsigned long req_start;		\/* inclusive *\/$/;"	m	struct:__anon15
+reset_pol_head_lifo	alifo.c	/^void reset_pol_head_lifo(pol_t *pol)$/;"	f
+resident	clock-pro.c	/^	bool resident;$/;"	m	struct:__anon3	file:
+resident	watch-pro.c	/^	bool resident;$/;"	m	struct:__anon1	file:
+run_hand_cold	clock-pro.c	/^run_hand_cold(clock_pro_t *clock)$/;"	f	file:
+run_hand_hot	clock-pro.c	/^run_hand_hot(clock_pro_t *clock)$/;"	f	file:
+run_hand_test	clock-pro.c	/^run_hand_test(clock_pro_t *clock)$/;"	f	file:
+score	alifo.c	/^score(pol_t *pol, unsigned long stime, int winner)$/;"	f	file:
+sentry	seq.h	/^	struct list_head sentry;	\/* sorted by Nth most recent fault *\/$/;"	m	struct:__anon20	typeref:struct:__anon20::list_head
+seq_list	seq.h	/^	struct list_head seq_list;$/;"	m	struct:__anon19	typeref:struct:__anon19::list_head
+seq_nth_fault_time	seq.c	24;"	d	file:
+seq_overfull	seq.c	/^seq_overfull(global_seq_t *gseq)$/;"	f	file:
+seq_t	seq.h	/^} seq_t;$/;"	t	typeref:struct:__anon20
+set_page_challenging	alifo.c	/^set_page_challenging(struct page *page)$/;"	f	file:
+set_page_evict_clock	alifo.c	/^set_page_evict_clock(struct page *victim)$/;"	f	file:
+set_page_evict_lifo	alifo.c	/^set_page_evict_lifo(struct page *victim)$/;"	f	file:
+set_page_pol	alifo.c	86;"	d	file:
+set_page_present	alifo.c	/^set_page_present(struct page *page)$/;"	f	file:
+set_page_starttime	alifo.c	/^set_page_starttime(struct page *victim, unsigned long stime)$/;"	f	file:
+set_ref_node_last	opt.c	/^set_ref_node_last(struct page *page, ref_node_t *node)$/;"	f	file:
+sim_opt	opt.c	/^void sim_opt(policy_t *self)$/;"	f
+snapshot_all	watch-pro.c	/^snapshot_all(data_WATCH_Pro_t *data, const char *str)$/;"	f	file:
+snapshot_all_list_end	alifo.c	/^snapshot_all_list_end(data_aLIFO_t *data, const char *str)$/;"	f	file:
+snapshot_all_list_start	alifo.c	/^snapshot_all_list_start(data_aLIFO_t *data, const char *str)$/;"	f	file:
+snapshot_all_seq_end	seq.c	/^snapshot_all_seq_end(global_seq_t *gseq, const char *str)$/;"	f	file:
+snapshot_all_seq_start	seq.c	/^snapshot_all_seq_start(global_seq_t *gseq, const char *str)$/;"	f	file:
+snapshot_buffer	opt.c	/^snapshot_buffer(const struct avl_tree_node *cand,$/;"	f	file:
+snapshot_gclock	watch-pro.c	/^snapshot_gclock(gclock_t *gclock)$/;"	f	file:
+snapshot_gclock_watch	watch-pro.c	/^snapshot_gclock_watch(gclock_t *gclock, watch_t *watch, const char *str)$/;"	f	file:
+snapshot_global_list_end	alifo.c	/^snapshot_global_list_end(struct list_head *page_list, const char *str)$/;"	f	file:
+snapshot_global_list_start	alifo.c	/^snapshot_global_list_start(struct list_head *page_list, const char *str)$/;"	f	file:
+snapshot_list_end	alifo.c	/^snapshot_list_end(struct list_head *page_list, pol_t *pol, const char *str)$/;"	f	file:
+snapshot_list_start	alifo.c	/^snapshot_list_start(struct list_head *page_list, pol_t *pol, const char *str)$/;"	f	file:
+snapshot_local_list_end	alifo.c	/^snapshot_local_list_end(pol_t *pol, const char *str)$/;"	f	file:
+snapshot_local_list_start	alifo.c	/^snapshot_local_list_start(pol_t *pol, const char *str)$/;"	f	file:
+snapshot_watch	watch-pro.c	/^snapshot_watch(watch_t *watch)$/;"	f	file:
+spow	alifo.c	/^spow(double base, unsigned long power)$/;"	f	file:
+spow_init	alifo.c	/^spow_init(double base)$/;"	f	file:
+start	alifo.h	/^	unsigned long start;			\/* inclusive *\/$/;"	m	struct:__anon8
+start	clock-pro.h	/^	unsigned long start;			\/* inclusive *\/$/;"	m	struct:__anon32
+start	mallocstat.h	/^	unsigned long start;			\/* inclusive *\/$/;"	m	struct:__anon17
+start	opt.h	/^	unsigned long start;			\/* inclusive *\/$/;"	m	struct:__anon24
+start	watch-pro.h	/^	unsigned long start;			\/* inclusive *\/$/;"	m	struct:__anon15
+start_challenge	alifo.c	/^start_challenge(pol_t *pol, struct page *victim, int policy)$/;"	f	file:
+stat	alifo.h	/^	pol_stat_t *stat;$/;"	m	struct:__anon7
+stat	clock-pro.h	/^	clock_pro_stat_t *stat;$/;"	m	struct:__anon33
+stat	clock-pro.h	/^	ma_stat_t *stat;$/;"	m	struct:__anon32
+stat	opt.h	/^	ma_stat_t *stat;$/;"	m	struct:__anon24
+stat	watch-pro.h	/^	gclock_stat_t *stat;$/;"	m	struct:__anon12
+stat	watch-pro.h	/^	watch_stat_t *stat;$/;"	m	struct:__anon13
+stime	alifo.c	/^	unsigned long stime;			\/* challenge start time *\/$/;"	m	struct:__anon2	file:
+test_and_clear_page_young_global	alifo.c	/^test_and_clear_page_young_global(struct page *page)$/;"	f	file:
+test_and_clear_page_young_global	watch-pro.c	/^test_and_clear_page_young_global(struct page *page)$/;"	f	file:
+test_and_clear_page_young_local	alifo.c	/^test_and_clear_page_young_local(struct page *page)$/;"	f	file:
+test_and_clear_page_young_local	watch-pro.c	/^test_and_clear_page_young_local(struct page *page)$/;"	f	file:
+testing	clock-pro.c	/^	bool testing;$/;"	m	struct:__anon3	file:
+time	alifo.h	/^	unsigned long time;$/;"	m	struct:__anon7
+time_left	opt.h	/^	unsigned long time_left;$/;"	m	struct:ref_node_t
+try_evict_page_seq	seq.c	/^try_evict_page_seq(data_SEQ_t *data)$/;"	f	file:
+try_extend_seq	seq.c	/^try_extend_seq(global_seq_t *gseq, unsigned long vpn)$/;"	f	file:
+try_split_seq	seq.c	/^try_split_seq(global_seq_t *gseq, unsigned long vpn)$/;"	f	file:
+try_unlock	opt.c	/^try_unlock(struct avl_tree_node **locked, struct avl_tree_node **cand,$/;"	f
+unlock_time	opt.h	/^	unsigned long unlock_time;$/;"	m	struct:ref_node_t
+update_clock_stat	clock-pro.c	/^update_clock_stat(policy_t *self)$/;"	f	file:
+update_opt_stat	opt.c	/^update_opt_stat(policy_t *self)$/;"	f	file:
+update_page_FIFO	fifo.c	/^static inline void update_page_FIFO(struct list_head *page_list, struct page *page)$/;"	f	file:
+update_page_LRU	lru.c	/^static inline void update_page_LRU(struct list_head *page_list, struct page *page)$/;"	f	file:
+update_page_stat	watch-pro.c	/^update_page_stat(policy_t *self)$/;"	f	file:
+update_pol_policies	alifo.c	/^update_pol_policies(data_aLIFO_t *data)$/;"	f	file:
+update_pol_policy	alifo.c	/^update_pol_policy(pol_t *pol)$/;"	f	file:
+update_pol_stat	alifo.c	/^update_pol_stat(pol_t *pol)$/;"	f	file:
+update_win_stat	alifo.c	/^update_win_stat(pol_t *pol, int winner)$/;"	f	file:
+update_young_list	seq.c	/^update_young_list(global_seq_t *gseq, seq_t *up)$/;"	f	file:
+vevict_page	alifo.c	/^vevict_page(struct page *page, int policy)$/;"	f	file:
+vpn	opt.h	/^	unsigned long vpn;$/;"	m	struct:ref_node_t
+watch	watch-pro.c	/^	watch_t *watch;$/;"	m	struct:__anon1	file:
+watch	watch-pro.h	/^	watch_t *watch;$/;"	m	struct:__anon15
+watch_cold_empty	watch-pro.c	/^watch_cold_empty(watch_t *watch)$/;"	f	file:
+watch_cold_max	watch-pro.c	/^watch_cold_max(watch_t *watch)$/;"	f	file:
+watch_cold_overfull	watch-pro.c	/^watch_cold_overfull(watch_t *watch)$/;"	f	file:
+watch_empty	watch-pro.c	/^watch_empty(watch_t *watch)$/;"	f	file:
+watch_free	watch-pro.c	/^watch_free(watch_t *watch)$/;"	f	file:
+watch_get_cold_page_move	watch-pro.c	/^watch_get_cold_page_move(watch_t *watch)$/;"	f	file:
+watch_get_page_move	watch-pro.c	/^watch_get_page_move(struct list_head **hptr)$/;"	f	file:
+watch_ghost_empty	watch-pro.c	/^watch_ghost_empty(watch_t *watch)$/;"	f	file:
+watch_hot_empty	watch-pro.c	/^watch_hot_empty(watch_t *watch)$/;"	f	file:
+watch_hot_overfull	watch-pro.c	/^watch_hot_overfull(watch_t *watch)$/;"	f	file:
+watch_init	watch-pro.c	/^watch_init(watch_t **watch)$/;"	f	file:
+watch_obsolete	watch-pro.c	/^watch_obsolete(watch_t *watch)$/;"	f	file:
+watch_size	watch-pro.c	/^watch_size(watch_t *watch)$/;"	f	file:
+watch_stat_t	watch-pro.h	/^} watch_stat_t;$/;"	t	typeref:struct:__anon11
+watch_t	watch-pro.h	/^} watch_t;$/;"	t	typeref:struct:__anon13
+whot	watch-pro.c	/^	bool whot;						\/* local hotness *\/$/;"	m	struct:__anon1	file:
+wref	watch-pro.c	/^	bool wref;						\/* watch ref *\/$/;"	m	struct:__anon1	file:
+wtesting	watch-pro.c	/^	bool wtesting;					\/* is the page in the stack S in LIRS? *\/$/;"	m	struct:__anon1	file:
+young_list	seq.h	/^	struct list_head young_list;$/;"	m	struct:__anon19	typeref:struct:__anon19::list_head
