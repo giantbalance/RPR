@@ -1175,6 +1175,7 @@ get_lifo_score(pol_t* pol)
 	double long num;
 	srand(time(0));
 	num = rand() / (double long)RAND_MAX;
+	// Exploration Code for RL
 	//TODO: optimize it
 	//if (pol->clock_weight > pol->lifo_weight && pol->clock_weight > num)
 	if (pol->clock_weight > pol->lifo_weight && pol-> clock_weight > num)
